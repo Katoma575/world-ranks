@@ -5,13 +5,11 @@ import styles from '../styles/Home.module.css'
 export default function Home({countries}) {
   console.log(countries);
 
-  const[keyword, setKeyword] = useState("");
+  const[keyword, setKeyword]= useState("");
 
-  const filteredCountries = countries.filter((country) =>
-    country.name.toLowerCase().includes(keyword) ||
-    country.region.toLowerCase().includes(keyword)||
-    country.subregion.toLowerCase().includes(keyword)
-  );
+  const filteredCountries = countries.filter(country =>
+    country.name.toLowerCase().includes(keyword)
+    );
 
   const onInputChange = (e) =>{
     e.preventDefault();
