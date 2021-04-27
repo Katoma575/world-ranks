@@ -79,6 +79,7 @@ const CountriesTable = ({countries}) =>{
          className={styles.heading_population}
             onClick={ () => setValueAndDirection('population')}
         >
+
             <div>Population</div>
 
             {value === "population" && <SortArrow direction={direction} />}

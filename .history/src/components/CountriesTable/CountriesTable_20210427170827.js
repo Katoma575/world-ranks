@@ -67,7 +67,7 @@ const CountriesTable = ({countries}) =>{
 
 
         <button
-            className={styles.heading_name}
+            className={styles.heading_name}>
             onClick={() =>setValueAndDirection("name")}
         >
             <div>Name</div>
@@ -77,8 +77,7 @@ const CountriesTable = ({countries}) =>{
 
         <button
          className={styles.heading_population}
-            onClick={ () => setValueAndDirection('population')}
-        >
+            onClick={ () => setValueAndDirection('population')}>
             <div>Population</div>
 
             {value === "population" && <SortArrow direction={direction} />}

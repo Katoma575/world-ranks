@@ -8,12 +8,12 @@ import Link from 'next/Link';
 const orderBy = (countries, value, direction) =>{
     if (direction === 'asc'){
     return [...countries].sort((a,　b) =>
-        a[value] > b[value]  ? 1 : -1　);
+        （a[value] > b[value]  ? 1 : -1　)）;
     }
 
     if (direction === 'desc'){
     return [...countries].sort((a,　b) =>
-        a[value] > b[value]  ? -1 : 1);
+    （a[value] > b[value]  ? -1 : 1));
     }
 
     return countries;
@@ -67,7 +67,7 @@ const CountriesTable = ({countries}) =>{
 
 
         <button
-            className={styles.heading_name}
+            className={styles.heading_name}>
             onClick={() =>setValueAndDirection("name")}
         >
             <div>Name</div>
@@ -77,8 +77,7 @@ const CountriesTable = ({countries}) =>{
 
         <button
          className={styles.heading_population}
-            onClick={ () => setValueAndDirection('population')}
-        >
+            onClick={ () => setValueAndDirection('population')}>
             <div>Population</div>
 
             {value === "population" && <SortArrow direction={direction} />}
