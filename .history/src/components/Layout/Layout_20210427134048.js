@@ -1,36 +1,9 @@
 import Head from "next/head";
 import Link from "next/Link";
-import { useEffect } from "react";
 import styles from './Layout.module.css';
 
 const Layout = ({children, title = "World Ranks"}) => {
-    const [theme, setTheme] = useState("light");
-
-    useEffect(()=> {
-        document.documentElement.setAttribute(
-            "data-theme",
-            localStorage.getItem("theme")
-        );
-
-        setTheme(localStorage.getItem("theme"));
-    }, []);
-
-    const switchTheme = () => {
-        if (theme ==='light' ) {
-           saveTheme("dark");
-        } else {
-            saveTheme("light");
-        }
-    };
-
-    const saveTheme = (theme) => {
-        setTheme(theme);
-        localStorage.setItem("theme", "theme");
-        document.documentElement.setAttribute("data-theme", "theme");
-    }
-
-
-return (
+return(
     <div className={styles.container}>
         <Head>
             <title>{title}</title>
@@ -48,10 +21,6 @@ return (
             </svg>
 
             </Link>
-
-            <button className={styles.themeSwitcher}>
-                <Brightness6Rounded />
-            </button>
         </header>
 
         <main className={styles.main}>

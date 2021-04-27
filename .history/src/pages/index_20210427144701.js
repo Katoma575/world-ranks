@@ -26,7 +26,7 @@ export default function Home({countries}) {
       <div className={styles.inputContainer}>
        <div className={styles.counts}>Found {countries.length} countries</div>
 
-      <div className={styles.input}>
+      <div>
         <SearchInput
           placeholder="Filter by Name, Region or SubRegion"
           onChange={onInputChange}

@@ -64,9 +64,6 @@ const CountriesTable = ({countries}) =>{
     return (
     <div>
     <div className={styles.heading}>
-    <div className={styles.heading_flag}></div>
-
-
         <button className={styles.heading_name}>
             <div>Name</div>
 

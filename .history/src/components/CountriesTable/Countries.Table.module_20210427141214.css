@@ -1,6 +1,5 @@
 .heading {
   display: flex;
-  padding: 20px;
 }
 
 .heading button {
@@ -12,7 +11,6 @@
 
 .heading_flag {
   flex: 1;
-  margin-right: 16px;
 }
 
 .heading_name,
@@ -20,6 +18,7 @@
 .heading_ara,
 .heading_gini {
   flex: 4;
+  padding: 20px;
   color: var(--text-color-secondary);
   font-weight: 500;
 
@@ -82,27 +81,9 @@
 
 .flag {
   flex: 1;
-  margin-right: 16px;
 }
 
 .flag img {
   border-radius: 2px;
   width: 100%;
-}
-
-@media screen and (max-width: 720px) {
-  .area,
-  .heading_area {
-    display: none;
-  }
-
-  .gini,
-  .heading_gini {
-    display: none;
-  }
-
-  .flag,
-  .heading_flag {
-    display: none;
-  }
 }

@@ -22,8 +22,8 @@ const Country =({country}) =>{
     <Layout title={country.name}>
         <div className={styles.container}>
             <div className={styles.container_left}>
-                <div className={Styles.overview_panel}>
-                <img src={country.flag} alt={country.name}></img>
+            <div className={Styles.overview_panel}>
+               <img src={country.flag} alt={country.name}></img>
 
                <h1 className={styles.overview_name}>
                    {country.name}
@@ -44,8 +44,10 @@ const Country =({country}) =>{
                     </div>
                 </div>
                </div></div>
+            <div className={styles.container_right}></div>
 
-            <div className={styles.container_right}>  <div className={styles.details_panel}>
+
+               <div className={styles.details_panel}>
                    <h4 className={styles.details_panel_heading}>Details</h4>
 
                    <div className={styles.details_panel_row}>
@@ -84,10 +86,7 @@ const Country =({country}) =>{
                     </div>
 
                    </div>
-                </div></div>
-
-
-
+                </div>
             </div>
     </Layout>
     );

@@ -91,18 +91,15 @@
 }
 
 @media screen and (max-width: 720px) {
-  .area,
-  .heading_area {
+  .area {
     display: none;
   }
 
-  .gini,
-  .heading_gini {
+  .gini {
     display: none;
   }
 
-  .flag,
-  .heading_flag {
+  .flag {
     display: none;
   }
 }
